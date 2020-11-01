@@ -1,23 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>To do app</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="wrapper">
-        <h1>To Do list</h1>
-        <div id="newWrapper">
-            <input type="text" id="newItem" placeholder="Add item...">
-            <button id="add">Add Task</button>
-        </div>
-        <hr>
-        <div id="todos">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Praneet Dixit | Front-end developer</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/unminified.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/Icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/Icons/site.webmanifest">
+    <link rel="mask-icon" href="assets/Icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/Icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="assets/Icons/browserconfig.xml">
+    <meta name="theme-color" content="#333333">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">Praneet Dixit</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <script src="script.js"></script>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+            <img class="img-fluid d-block mx-auto mb-5" src="assets/img/circle-cropped.png" height="210" width="210">
+            <h1>Praneet Dixit</h1>
+            <hr class="star-light">
+            <h2 class="font-weight-light mb-0">Front-end Web Developer</h2>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">My skills</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 med d-flex justify-content-center flex-column align-items-center">
+                    HTML
+                    <div class="h6 m-3">
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle-o"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 med d-flex justify-content-center flex-column align-items-center">
+                    CSS
+                    <div class="h6 m-3">
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle-o"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 med d-flex justify-content-center flex-column align-items-center">
+                    JavaScript
+                    <div class="h6 m-3">
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-circle-o"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 med d-flex justify-content-center flex-column align-items-center">
+                    Sass
+                    <div class="h6 m-3">
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-circle-o"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 med d-flex justify-content-center flex-column align-items-center">
+                    C++
+                    <div class="h6 m-3">
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-circle-o"></i>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 med d-flex justify-content-center flex-column align-items-center">
+                    Python
+                    <div class="h6 m-3">
+                        <i class="fa fa-circle"></i>
+                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-circle-o"></i>
+                        <i class="fa fa-circle-o"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="bg-primary text-white mb-0">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">About</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Hi! My name is Praneet Dixit and I am a Front-end web developer. I am a student in Grade 9 and I live in Banswara, Rajasthan. I love making beautiful and amazing things using the power of code. I like working on projects. I always look for opportunities to showcase my work. Although not very often but I post some articles on <a href="http://mydevopinion.blogspot.com" class="separate" target="_blank">my blog.</a></p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">Competitive programming is one of my hobbies and I participate in various coding competitions and hackathons round the year. I like to work with community people at <a href="http://stackoverflow.com" target="_blank" class="separate">StackOverflow</a>. Apart from this, I find <a href="http://medium.com" target="_blank" class="separate">Medium</a> a good place to read articles. Although I have not worked on many projects, I have written some cool pens at <a href="https://codepen.io" target="_blank" class="separate">CodePen</a>. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">Projects</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white">Day to Dayz Solutions Pro</div>
+                        </div><img class="img-fluid project-img" src="assets/img/newsite.JPG">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white">Day to Dayz Solutions</div>
+                        </div><img class="img-fluid project-img" src="assets/img/site.JPG"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-primary">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">Priorities</h2>
+            <hr class="star-light mb-5">
+            <div class="row justify-content-center text-white">
+                <div class="col-lg-3 col-md-6 m-3 h4 text-justify">
+                    <p class="text-center">Responsive Design</p>
+                    <hr>
+                    Responsive design is very important in modern sites. I try to make my sites adjust according to the devices and screens of the users.
+                </div>
+                <div class="col-lg-3 col-md-6 text-justify m-3 h4">
+                    <p class="text-center">SEO</p>
+                    <hr>
+                    I follow Search Engine Optimization practices to ensure easy searching of sites across all search engines resulting in increased site traffic.
+                </div>
+                <div class="col-lg-3 col-md-6 text-justify m-3 h4">
+                    <p class="text-center">Speed</p>
+                    <hr>
+                    Speed is a major topic of concern in web. I follow all the practices such as removing excessive code and minification to ensure fast loading speed.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto h4 text-center" style="line-height: 2.5rem">Interested? <br>Reach me at <a href="mailto:praneetdixit1234@gmail.com">praneetdixit1234@gmail.com</a> or fill the form below-</div>
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" name="sentMessage" method="post" action="https://formspree.io/f/mknpbbqn">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="required" placeholder="Name" name="Name"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="required" placeholder="Email Address" name="Email"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="number" id="phone" required="required" placeholder="Phone Number" name="phone"><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="required" placeholder="Message" rows="5" name="Message"></textarea><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div id="success"></div>
+                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p>24, Bahubali Colony<br>Banswara, Rajasthan</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase">Around the Web</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://codepen.io/PraneetDixit" target="_blank"><i class="fa fa-codepen fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://github.com/PraneetDixit" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://stackoverflow.com/users/13606509/praneet-dixit" target="_blank"><i class="fa fa-stack-overflow fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" role="button" href="https://dribbble.com/PraneetDixit" target="_blank"><i class="fa fa-dribbble fa-fw"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-uppercase mb-4">About Site</h4>
+                    <p class="lead mb-0"><span>Website developed by Praneet Dixit</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright ©&nbsp;Praneet Dixit 2020</small></div>
     </div>
+    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Day to Dayz Solutions Pro</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/newsite.JPG">
+                                <p class="mb-5">This is an enhanced version version of the previous Day to Dayz Solutions website with a new UI. Packed with more animations, CSS and a little bit of JS, this website provides a better user experience. This website is currently deployed at <a href="https://daytodayzsolutions.netlify.app" target="_blank">https://daytodayzsolutions.netlify.app</a>. The source code it available at <a href="https://github.com/PraneetDixit/Newsite" target="_blank">Github</a>. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://daytodayzsolutions.netlify.app" target="_blank">Visit website</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Day to Dayz Solutions</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/site.JPG">
+                                <p class="mb-5">This is my first website. It is a company website. It was basically created for a Pest Control Business "Day to Dayz Solutions". Only HTML and a little bit of CSS are used without any JS. This site is currently deployed at <a href="https://day-to-dayz-solutions.netlify.app" target="_blank">https://day-to-dayz-solutions.netlify.app</a> The source code is also available at <a href="https://github.com/PraneetDixit/Praneet" target="_blank">Github.</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="https://day-to-dayz-solutions.netlify.app" target="_blank">Visit Website</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/freelancer.js"></script>
 </body>
+
 </html>
