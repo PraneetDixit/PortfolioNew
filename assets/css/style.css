@@ -8,3 +8,26 @@
 .poppins{
     font-family: "Poppins", sans-serif;
 }
+
+nav li a{
+    color: rgba(255, 255, 255, 0.7) !important;
+    transition: color 0.2s;
+    font-family: "Poppins", sans-serif;
+}
+nav li a:hover, .current a{
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.under{
+    content: "";
+    bottom: 0px;
+    left:0px;
+    width: 0px;
+    height: 2px;
+    transition: width 0.35s;
+}
+
+nav li:hover .under, nav li.current .under{
+    background-color: #fff;
+    width: 100%;
+}
