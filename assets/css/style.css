@@ -2,7 +2,14 @@
     background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%,
         rgba(116, 15, 214, 0.9) 100%),
         url("../img/main.jpg") center center no-repeat ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0px;
+}
 
+#landing .container{
+    padding-top: 85px;
 }
 
 .poppins{
@@ -15,7 +22,7 @@ nav li a{
     font-family: "Poppins", sans-serif;
     font-weight: 600 !important;
 }
-nav li a:hover, .current a{
+nav li:hover a, .current a{
     color: rgba(255, 255, 255, 1) !important;
 }
 
@@ -23,7 +30,7 @@ nav li a:hover, .current a{
     content: "";
     bottom: 0px;
     left:0px;
-    width: 0px;
+    width: 0%;
     height: 2px;
     transition: width 0.35s;
 }
@@ -31,6 +38,7 @@ nav li a:hover, .current a{
 nav li:hover .under, nav li.current .under{
     background-color: #fff;
     width: 100%;
+    transition: width 0.25s;
 }
 
 nav ul li a#contactBtn{
@@ -43,4 +51,21 @@ nav ul li a#contactBtn{
 
 nav ul li a#contactBtn:hover{
     border: 2px solid rgba(255, 255, 255, 1) !important;;
+}
+
+.trans{
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#knowMe{
+    width: fit-content;
+    padding: 8px 25px;
+    border: 2px solid white;
+    transition: background-color 0.5s, color 0.5s;
+    color: white;
+}
+
+#knowMe:hover{
+    background-color: white;
+    color: #5846f9 !important;
 }
