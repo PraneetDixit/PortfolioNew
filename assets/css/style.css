@@ -1,5 +1,6 @@
 body{
     scroll-behavior: smooth;
+    color: rgb(64, 64, 64);
 }
 
 #landing{
@@ -104,4 +105,8 @@ nav ul li a#contactBtn:hover{
     background-color: #1806b9cc;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
+}
+
+.distance{
+    line-height: 24px;
 }
