@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
 </head>
 <body>
     <header class="fixed-top p-3" id="navHeader">
@@ -42,16 +43,38 @@
         </div>
     </header>
     <section class="min-vh-100" id="landing">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+            <div class="row align-items-center justify-content-around">
                 <div class="col-lg-6 col-xl-5 d-flex flex-column justify-content-center">
-                    <h1 class="text-white display-4 font-weight-bold mb-4">I make websites that you want</h1>
-                    <h4 class="text-white trans mb-4">I am a student, web developer and JavaScript lover</h4>
+                    <h1 class="text-white display-4 font-weight-bold mb-4">Websites at your doorstep</h1>
+                    <h4 class="text-white trans mb-4">I make dynamic modern websites for all your needs</h4>
                     <a href="#about" class="d-inline-block text-decoration-none rounded h5" id="knowMe">Know more</a>
+                </div>
+                <div class="col-lg-6 col-xl-4">
+                    <img src="assets/img/code.svg" alt="Code icon" class="img-fluid" id="toAnimate">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>My name is Praneet Dixit and I am a web developer</h2>
                 </div>
                 <div class="col-lg-6"></div>
             </div>
         </div>
     </section>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        })
+    </script>
 </body>
 </html>
