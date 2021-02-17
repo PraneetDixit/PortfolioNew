@@ -13,6 +13,7 @@ nav li a{
     color: rgba(255, 255, 255, 0.7) !important;
     transition: color 0.2s;
     font-family: "Poppins", sans-serif;
+    font-weight: 600 !important;
 }
 nav li a:hover, .current a{
     color: rgba(255, 255, 255, 1) !important;
@@ -30,4 +31,16 @@ nav li a:hover, .current a{
 nav li:hover .under, nav li.current .under{
     background-color: #fff;
     width: 100%;
+}
+
+nav ul li a#contactBtn{
+    padding: 8px 25px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7) !important;
+    color: #fff !important;
+    transition: border-color 0.25s;
+}
+
+nav ul li a#contactBtn:hover{
+    border: 2px solid rgba(255, 255, 255, 1) !important;;
 }
