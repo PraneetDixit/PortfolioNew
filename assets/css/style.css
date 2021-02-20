@@ -187,3 +187,78 @@ nav ul li a#contactBtn:hover{
 .justify-even{
     justify-content: space-evenly;
 }
+
+#htm{
+    --c1: #fa502e;
+    --c2: #fd982c;
+}
+
+#cs{
+    --c1: #2196f3;
+    --c2: #7ac0f8;
+}
+
+#js{
+    --c1: #ffa800;
+    --c2: #ffe100;
+}
+
+#sass{
+    --c1: #f31482;
+    --c2: #cd6699;
+}
+
+#node{
+    --c1: #428541;
+    --c2: #5eac46;
+}
+
+.ind div{
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, var(--c1), var(--c2)),
+                      linear-gradient(to bottom, var(--c2), var(--c1)),
+                      linear-gradient(to right, var(--c2), var(--c1)),
+                      linear-gradient(to bottom, var(--c1), var(--c2));
+    background-size: 100% 10px,
+                     10px 100%,
+                     100% 10px,
+                     10px 100%;
+    background-position: 0 0,
+                         100% 0,
+                         100% 100%,
+                         0 100%;
+    animation: bg 2s infinite;
+}
+
+@keyframes bg {
+    0% {
+        background-size:    0 10px,
+        10px 0,
+        0 10px,
+        10px 0;
+    }
+    25% {
+        background-size:    100% 10px,
+        10px 0,
+        0 10px,
+        10px 0;
+    }
+    50% {
+        background-size:    100% 10px,
+        10px 100%,
+        0 10px,
+        10px 0;
+    }
+    75% {
+        background-size:    100% 10px,
+        10px 100%,
+        100% 10px,
+        10px 0;
+    }
+    100% {
+        background-size:    100% 10px,
+        10px 100%,
+        100% 10px,
+        10px 100%;
+    }
+}
