@@ -4,6 +4,36 @@ html{
 
 body{
     color: rgb(64, 64, 64);
+    overflow: overlay;
+}
+
+body::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-color: rgba(116, 15, 214, 0.9);
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+body::-webkit-scrollbar-thumb:active{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+section{
+    padding: 100px 0px;
 }
 
 #landing{
@@ -120,4 +150,40 @@ nav ul li a#contactBtn:hover{
 }
 #changeImgBtn:hover{
     background-image: linear-gradient(-135deg, #5846f9 0%, #7b27d8 100%);
+}
+
+#skills{
+    background-color: #f9f8ff;
+}
+
+.under-diff:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #5846f9;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.ind, .ind div{
+    aspect-ratio: 1;
+}
+
+.ind div{
+    transition: box-shadow 0.3s;
+}
+
+.ind div:hover{
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ind div img{
+    height: 150px;
+    width: auto;
+}
+
+.justify-even{
+    justify-content: space-evenly;
 }
