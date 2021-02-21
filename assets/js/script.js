@@ -6,7 +6,6 @@ function setNav(){
     }
 }
 document.body.onscroll = setNav;
-document.body.onload = setNav;
 
 document.addEventListener('aos:in:startAnim', ({ detail }) => {
     console.log("In and once");

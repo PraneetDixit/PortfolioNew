@@ -4,6 +4,7 @@ html{
 
 body{
     color: rgb(64, 64, 64);
+    /*noinspection CssInvalidPropertyValue*/
     overflow: overlay;
 }
 
@@ -273,4 +274,26 @@ nav ul li a#contactBtn:hover{
     100% {
         background-size:    var(--kf100);
     }
+}
+
+.portfolioItem > div{
+    position: relative;
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.imgCont{
+    height: fit-content;
+    width: fit-content;
+}
+.arrowBef, .arrowAft {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    clip-path: polygon(0% 0%,0% 65px,65px 0%);
+    background-color: rgba(88, 70, 249, 0.8);
+}
+
+.arrowAft{
+    transform: rotate(180deg);
 }
