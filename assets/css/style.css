@@ -277,7 +277,6 @@ nav ul li a#contactBtn:hover{
 }
 
 .portfolioItem > div{
-    position: relative;
     box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -285,15 +284,15 @@ nav ul li a#contactBtn:hover{
     height: fit-content;
     width: fit-content;
 }
-.arrowBef, .arrowAft {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.arrowBef{
+    opacity: 0;
     content: "";
-    clip-path: polygon(0% 0%,0% 65px,65px 0%);
+    clip-path: polygon(20px 20px, calc(100% - 20px) 20px, calc(100% - 20px) calc(100% - 20px), 20px calc(100% - 20px));
+    transition: opacity 0.5s, clip-path 0.65s;
     background-color: rgba(88, 70, 249, 0.8);
 }
 
-.arrowAft{
-    transform: rotate(180deg);
+.imgCont:hover .arrowBef{
+    opacity: 1;
+    clip-path: polygon(0px 0px, 100% 0px, 100%  100%, 0px 100% );
 }
