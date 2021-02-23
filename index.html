@@ -290,6 +290,42 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="poppins font-weight-bold text-center under-diff position-relative pb-3 mb-3 text-uppercase" style="color: rgb(44, 73, 100)">Contact</h2>
+            <p class="h6 text-center poppins">You can reach out to me by filling the below form or dropping a mail at <em>praneetdixit1234@gmail.com</em></p>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6">
+                    <form class="bg-white px-5 pb-4 pt-5" novalidate>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="fullName" placeholder="Your name" required>
+                            <div class="invalid-feedback">
+                                Please enter your name
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            <div class="invalid-feedback">
+                                Please enter your email
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="mobile" placeholder="Mobile number (optional)">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="7" placeholder="Your message" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter a message
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="form-control form-control-lg mx-auto bg-primary text-white" name="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/aos.js"></script>
     <script>
@@ -297,6 +333,17 @@
             once: true
         });
         setNav();
+    </script>
+    <script>
+        let form = document.getElementsByTagName("form")[0];
+
+        form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
     </script>
 </body>
 </html>
