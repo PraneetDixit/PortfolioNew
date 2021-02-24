@@ -37,15 +37,17 @@ section{
     padding: 100px 0px;
 }
 
-#landing{
+#landing, footer{
     background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%,
-        rgba(116, 15, 214, 0.9) 100%),
-        url("../img/main.jpg") center center no-repeat ;
-    background-attachment: fixed;
-    background-position: center;
+    rgba(116, 15, 214, 0.9) 100%),
+    url("../img/main.jpg") center center no-repeat ;
     background-size: cover;
+}
+#landing{
+    background-attachment: fixed;
     padding: 100px 0px;
 }
+
 
 #landing .container{
     padding-top: 85px;
@@ -86,6 +88,10 @@ nav ul li a#contactBtn{
     border: 2px solid rgba(255, 255, 255, 0.7) !important;
     color: #fff !important;
     transition: border-color 0.25s;
+}
+
+#cbtn.current a{
+    border: 2px solid rgba(255, 255, 255, 1) !important;
 }
 
 nav ul li a#contactBtn:hover{
@@ -291,10 +297,23 @@ nav ul li a#contactBtn:hover{
     transition: opacity 0.5s, clip-path 0.65s;
     background-color: rgba(88, 70, 249, 0.8);
 }
+.arrowBef h3, .arrowBef h6{
+    transform: translateY(-20px);
+    transition: transform 0.5s;
+}
+
+.arrowBef h5{
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
 
 .imgCont:hover .arrowBef{
     opacity: 1;
     clip-path: polygon(0px 0px, 100% 0px, 100%  100%, 0px 100% );
+}
+
+.imgCont:hover .arrowBef h3, .imgCont:hover .arrowBef h5, .imgCont:hover .arrowBef h6{
+    transform: translateY(0px);
 }
 
 input::-webkit-outer-spin-button,
@@ -305,4 +324,31 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+#links a{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 40px;
+    width: 40px;
+}
+
+#links a:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#links i{
+    margin-top: 11px;
+    font-size: 18px;
+}
+
+#toTop{
+    bottom: 2rem;
+    right: 2.5rem;
+    height: fit-content;
+    background-color: #5846f9;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#toTop:hover{
+    background-color: #792adb;
 }

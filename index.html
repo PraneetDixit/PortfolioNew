@@ -36,7 +36,7 @@
                         <a href="#portfolio" class="nav-link h6 px-1 py-1 mb-1">Portfolio</a>
                         <span class="under d-inline-block position-absolute"></span>
                     </li>
-                    <li class="d-inline-block position-relative mx-2">
+                    <li class="d-inline-block position-relative mx-2" id="cbtn">
                         <a href="#contact" class="nav-link h6 btn-primary ml-4 rounded" id="contactBtn">Contact</a>
                     </li>
                 </ul>
@@ -117,7 +117,7 @@
             <h2 class="poppins font-weight-bold text-center under-diff position-relative pb-3 mb-3 text-uppercase" style="color: rgb(44, 73, 100)">Portfolio</h2>
             <p class="h6 text-center poppins">Here is a small collection of my websites and mini-projects :-</p>
             <div class="row mt-3">
-                <div class="col-lg-4 portfolioItem">
+                <div class="col-lg-4 portfolioItem" data-aos="fade-up" data-aos-easing="ease-in-out">
                     <div>
                         <div class="imgCont position-relative">
                             <div class="arrowBef position-absolute h-100 w-100 d-flex justify-content-center align-items-center flex-column">
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 portfolioItem">
+                <div class="col-lg-4 portfolioItem" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300">
                     <div>
                         <div class="imgCont position-relative">
                             <div class="arrowBef position-absolute h-100 w-100 d-flex justify-content-center align-items-center flex-column">
@@ -232,8 +232,28 @@
                             <img src="assets/img/site.JPG" alt="Day to Dayz Solutions" class="d-block w-100">
                         </div>
                     </div>
+                    <div class="mt-4">
+                        <div class="imgCont position-relative">
+                            <div class="arrowBef position-absolute h-100 w-100 d-flex justify-content-center align-items-center flex-column">
+                                <h3 class="text-white poppins">Praneet Dixit v1</h3>
+                                <h6 class="text-white mt-2 poppins text-center px-3">
+                                    My old portfolio site.
+                                </h6>
+                                <h5 class="mt-2">
+                                    <a href="http://v1.praneetdixit.me/" class="text-white text-decoration-none" target="_blank">
+                                        <i class="fa fa-external-link"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a href="https://github.com/PraneetDixit/Portfolio" class="text-white text-decoration-none" target="_blank">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </h5>
+                            </div>
+                            <img src="assets/img/v1PD.JPG" alt="Praneet Dixit v1" class="d-block w-100">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 portfolioItem">
+                <div class="col-lg-4 portfolioItem" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="600">
                     <div>
                         <div class="imgCont position-relative">
                             <div class="arrowBef position-absolute h-100 w-100 d-flex justify-content-center align-items-center flex-column">
@@ -294,9 +314,9 @@
         <div class="container">
             <h2 class="poppins font-weight-bold text-center under-diff position-relative pb-3 mb-3 text-uppercase" style="color: rgb(44, 73, 100)">Contact</h2>
             <p class="h6 text-center poppins">You can reach out to me by filling the below form or dropping a mail at <em>praneetdixit1234@gmail.com</em></p>
-            <div class="row justify-content-center mt-4">
+            <div class="row justify-content-center mt-4" data-aos="fade-right" data-aos-easing="ease">
                 <div class="col-lg-6">
-                    <form class="bg-white px-5 pb-4 pt-5" novalidate>
+                    <form class="bg-white px-5 pb-4 pt-5" action="https://formspree.io/f/xeqpbjnw" method="POST" novalidate>
                         <div class="form-group">
                             <input type="text" class="form-control" name="fullName" placeholder="Your name" required>
                             <div class="invalid-feedback">
@@ -326,6 +346,23 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container py-4">
+            <div class="row justify-content-between text-white">
+                <div class="col-lg-3 h6 distance mb-0 poppins">
+                    <i class="fa fa-copyright"></i> Copyright 2021 <br>
+                    Made with <i class="fa fa-heart text-danger"></i> by Praneet Dixit
+                </div>
+                <div class="col-lg-9 d-flex align-items-center justify-content-end mb-0" id="links">
+                    <a href="https://codepen.io/PraneetDixit" class="text-white mr-4 rounded-circle d-inline-block text-center"><i class="fa fa-codepen"></i></a>
+                    <a href="https://stackoverflow.com/users/13606509/praneet-dixit" class="text-white mr-4 rounded-circle d-inline-block text-center"><i class="fa fa-stack-overflow"></i></a>
+                    <a href="https://github.com/PraneetDixit" class="text-white mr-4 rounded-circle d-inline-block text-center"><i class="fa fa-github"></i></a>
+                    <a href="https://mydevopinion.blogspot.com/" title="My blog" class="text-white rounded-circle d-inline-block text-center"><i class="fa fa-book"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div href="#navHeader" class="text-white position-fixed p-3 h4 rounded fa fa-arrow-up d-none" id="toTop"></div>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/aos.js"></script>
     <script>
