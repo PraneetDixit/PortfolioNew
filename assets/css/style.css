@@ -352,3 +352,25 @@ input[type=number] {
 #toTop:hover{
     background-color: #792adb;
 }
+
+input[type="submit"]{
+    background-color: #5846f9 !important;
+    transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover{
+    background-color: #7b27d8 !important;
+}
+
+@media (max-width: 992px) {
+    #navHeader{
+        background-color: #1806b9cc;
+    }
+    li{
+        width: fit-content;
+    }
+
+    .container{
+        max-width: 780px !important;
+    }
+}

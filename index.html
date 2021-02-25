@@ -16,42 +16,45 @@
 </head>
 <body>
     <header class="fixed-top p-2" id="navHeader">
-        <div class="container p-3 d-flex justify-content-between align-items-center">
+        <nav class="container p-3 navbar navbar-expand-lg">
             <a href="index.html" class="h2 text-white text-decoration-none poppins">Praneet Dixit</a>
-            <nav class="navbar">
-                <ul class="list-unstyled mb-0">
-                    <li class="d-inline-block position-relative mx-3 current">
+            <button class="navbar-toggler rounded border-white" style="border-width: 2px" type="button" data-toggle="collapse" data-target="#toExpandNav" aria-controls="toExpandNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars text-white h5 mb-0"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end align-items-center" id="toExpandNav">
+                <ul class="mb-0 navbar-nav d-md-flex flex-column align-items-center d-lg-block d-xl-block">
+                    <li class="d-inline-flex align-items-center position-relative mx-xl-3 mx-lg-3 mx-md-0 my-md-1 current">
                         <a href="#landing" class="nav-link h6 px-1 py-1 mb-1">Home</a>
                         <span class="under d-inline-block position-absolute"></span>
                     </li>
-                    <li class="d-inline-block position-relative mx-3">
+                    <li class="d-inline-flex align-items-center position-relative mx-lg-3 mx-xl-3 mx-md-0 my-md-1">
                         <a href="#about" class="nav-link h6 px-1 py-1 mb-1">About</a>
                         <span class="under d-inline-block position-absolute"></span>
                     </li>
-                    <li class="d-inline-block position-relative mx-3">
+                    <li class="d-inline-flex align-items-center position-relative mx-lg-3 mx-xl-3 mx-md-0 my-md-1">
                         <a href="#skills" class="nav-link h6 px-1 py-1 mb-1">Skills</a>
                         <span class="under d-inline-block position-absolute"></span>
                     </li>
-                    <li class="d-inline-block position-relative mx-3">
+                    <li class="d-inline-flex align-items-center position-relative mx-lg-3 mx-xl-3 mx-md-0 my-md-1">
                         <a href="#portfolio" class="nav-link h6 px-1 py-1 mb-1">Portfolio</a>
                         <span class="under d-inline-block position-absolute"></span>
                     </li>
-                    <li class="d-inline-block position-relative mx-2" id="cbtn">
-                        <a href="#contact" class="nav-link h6 btn-primary ml-4 rounded" id="contactBtn">Contact</a>
+                    <li class="d-inline-block position-relative mx-lg-2 mx-xl-2 mx-md-0 my-md-1" id="cbtn">
+                        <a href="#contact" class="nav-link h6 btn-primary ml-lg-4 ml-xl-4 rounded m-md-0" id="contactBtn">Contact</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <section class="min-vh-100" id="landing">
         <div class="container">
             <div class="row align-items-center justify-content-around">
-                <div class="col-lg-6 col-xl-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="500">
+                <div class="col-md-7 col-lg-6 col-xl-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="500">
                     <h1 class="text-white display-4 font-weight-bold mb-4">Websites at your doorstep</h1>
                     <h4 class="text-white trans mb-4">I make dynamic modern websites for all your needs</h4>
                     <a href="#about" class="d-inline-block text-decoration-none rounded h5" id="knowMe">Know more</a>
                 </div>
-                <div class="col-lg-6 col-xl-4" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="500">
+                <div class="col-md-5 col-lg-5 col-xl-4" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="500">
                     <img src="assets/img/code.svg" alt="Code icon" class="img-fluid" id="toAnimate">
                 </div>
             </div>
@@ -60,7 +63,7 @@
     <section id="about">
         <div class="container">
             <div class="row justify-content-around">
-                <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="250">
+                <div class="col-md-11 col-lg-6 d-flex flex-column justify-content-center order-md-1" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-delay="250">
                     <h2 class="poppins font-weight-bold" style="color: rgb(44, 73, 100)">My name is Praneet Dixit and I am a web developer</h2>
                     <p class="h6 poppins distance">
                         I am a student in Grade 9 and I live in Banswara, Rajasthan.
@@ -73,7 +76,7 @@
                     </p>
                     <a href="#skills" class="btn h5 text-white rounded py-2 pr-5 pl-4 mt-3" id="changeImgBtn" style="width: fit-content">Know my skills</a>
                 </div>
-                <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250" data-aos-easing="ease-in-out">
+                <div class="mb-md-3 col-md-6 col-lg-5 order-md-0" data-aos="zoom-in" data-aos-delay="250" data-aos-easing="ease-in-out">
                     <img src="assets/img/user.png" alt="User icon" class="img-fluid">
                 </div>
             </div>
@@ -339,7 +342,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="form-control form-control-lg mx-auto bg-primary text-white" name="submit" value="Submit">
+                            <input type="submit" class="form-control form-control-lg mx-auto bg-primary text-white border-0" name="submit" value="Send Message">
                         </div>
                     </form>
                 </div>
@@ -363,6 +366,8 @@
         </div>
     </footer>
     <div href="#navHeader" class="text-white position-fixed p-3 h4 rounded fa fa-arrow-up d-none" id="toTop"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/aos.js"></script>
     <script>
