@@ -1,43 +1,46 @@
 function setNav(){
     if(window.pageYOffset > 70){
-        document.getElementById("navHeader").classList.add("scrolled");
-        document.getElementById("toTop").classList.remove("d-none");
+        $("#navHeader").addClass("scrolled");
+        $("#toTop").removeClass("d-none");
     }else{
-        document.getElementById("navHeader").classList.remove("scrolled");
-        document.getElementById("toTop").classList.add("d-none");
+        $("#navHeader").removeClass("scrolled");
+        $("#toTop").addClass("d-none");
     }
 }
-document.addEventListener('aos:in:startAnim', ({ detail }) => {
+$(document).on('aos:in:startAnim', ({ detail }) => {
     setTimeout(function(){
-        document.querySelectorAll(".ind div").forEach(function (item, ind) {
-            item.style.animationDelay = `${ind*500}ms`;
-            item.style.animationName = "bg";
-            item.style.animationDuration = "2s";
-            item.style.animationIterationCount = "1";
-            item.style.animationFillMode = "forwards";
+        $(".ind div").each(function (ind) {
+            $(this).css({
+                "animation-delay": `${ind*500}ms`,
+                "animation-name": "bg",
+                "animation-duration": "2s",
+                "animation-iteration-count": "1",
+                "animation-fill-mode": "forwards"
+            });
         });
     }, 1000);
 });
 
-document.getElementById("toTop").addEventListener("click", function (){
+$("#toTop").click(function (){
     window.scrollTo(0, 0);
 });
 
-let navbarlinks = document.querySelectorAll(".nav-link");
+let navbarlinks = $(".nav-link");
 
 function navbarlinksActive(){
+    // console.log("Here");
     let position = window.scrollY + 200;
-    navbarlinks.forEach(navbarlink => {
-        let section = document.querySelector(navbarlink.hash);
-        if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-            navbarlink.parentElement.classList.add('current');
+    navbarlinks.each(function (){
+        let section = $($(this).prop("hash"));
+        if (position >= section.prop("offsetTop") && position <= (section.prop("offsetTop") + section.prop("offsetHeight"))) {
+            $(this).parent().addClass('current');;
         } else {
-            navbarlink.parentElement.classList.remove('current');
+            $(this).parent().removeClass('current');
         }
     });
 }
-window.addEventListener('load', navbarlinksActive);
-window.addEventListener("scroll", function (){
+$(document).ready(navbarlinksActive);
+$(window).scroll(function (){
     navbarlinksActive();
     setNav();
 });
