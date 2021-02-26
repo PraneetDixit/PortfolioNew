@@ -8,7 +8,6 @@ function setNav(){
     }
 }
 document.addEventListener('aos:in:startAnim', ({ detail }) => {
-    console.log("In and once");
     setTimeout(function(){
         document.querySelectorAll(".ind div").forEach(function (item, ind) {
             item.style.animationDelay = `${ind*500}ms`;
